@@ -262,6 +262,7 @@ version(Windows) {
 	}
 } else {
 	this() {
+		// Plugin interface initialization
 		PluginReg = new InterfaceReg(cast(InstantiateInterfaceFn)(&GetPluginInterface), "ISmmPlugin");
 	}
 }
